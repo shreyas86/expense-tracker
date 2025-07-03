@@ -13,7 +13,7 @@ const app=express()
 
 app.use(
     cors({
-        origin:["https://expense-tracker-frontend-1-dhqd.onrender.com"],
+        origin:["https://expense-tracker-beta-ebon.vercel.app/"],
         methods:["GET","PUT","POST","DELETE"],
         allowedHeaders:["content-Type","Authorization"],
     })

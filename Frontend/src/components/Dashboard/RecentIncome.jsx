@@ -11,12 +11,12 @@ const RecentIncome = ({transaction,onSeeMore}) => {
             <button className='card-btn' onClick={onSeeMore}>See More <LuArrowRight className='text-base'/></button>
             </div>     
 <div className="mt-6">
-    {transaction?.slice(0,5)?.map((item)=>(
+    {transaction?.slice(0,5)?.map((item,index)=>(
         <TransactionInfocard
-        key={item._id}
+        key={item._id || index}
         title={item.source}
         icon={item.icon}
-        date={moment(item.date).format("Do MMM YYY")}
+        date={moment(item.date).format("Do MMM YYYY")}
         amount={item.amount}
         type="income"
         hideDeleteBtn/>

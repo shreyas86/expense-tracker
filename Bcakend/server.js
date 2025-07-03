@@ -13,7 +13,7 @@ const app=express()
 
 app.use(
     cors({
-        origin:[process.env.CLIENT_URL] ||"https://expense-tracker-frontend-1-dhqd.onrender.com",
+        origin:[process.env.CLIENT_URL ||"https://expense-tracker-frontend-1-dhqd.onrender.com"],
         methods:["GET","PUT","POST","DELETE"],
         allowedHeaders:["content-Type","Authorization"],
     })

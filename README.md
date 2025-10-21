@@ -1,1 +1,2 @@
-![Uploading expense.png…]()
+![Expense Screenshot](./expense.png)
+
